@@ -1,0 +1,238 @@
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100%;
+            /* height: 500vh; */
+            /* background-color: cornflowerblue; */
+        }
+        nav{
+            width: 100%;
+            height: 80px;
+            background-color: #c9c9d8;
+            position: fixed;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            gap: 900px;
+        }
+        nav>#menu{
+            height: 40px;
+        }
+        nav>ul{
+            position: fixed;
+            display: flex;
+            align-items: center;
+            gap: 100px;
+        }
+        nav>ul>li{
+            list-style-type: none;
+        }
+        nav>ul>li>a{
+            text-decoration: none;
+            font-size: 30px;
+            color: black;
+        }
+        .home{
+            width: 100%;
+            height: 800px;
+            /* background-color: bisque; */
+        }
+        .home>#home01{
+            width: 100%;
+            height: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 200px;
+            padding-top: 100px;
+        }
+        .home>#home01>#profile{
+            width: 400px;
+            height: 400px;
+            background-color: #c9c9d8;
+            border-radius: 50%;
+            background-image: url(../Images/hero_image.png);
+            background-size: cover;
+        }
+        .home>#home01>#welcome{
+            width: 500px;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .home>#home01>#welcome>div{
+            background-color: green;
+            color: white;
+            width: 200px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+        }
+        .home>#home01>#welcome>h1{
+            width: 300px;
+            height: 80px;
+            font-size: 40px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .home>#home01>#welcome>p{
+            width: 350px;
+            margin-bottom: 20px;
+        }
+        .home>#home01>#welcome>button{
+            width: 150px;
+            height: 40px;
+            background-color: rgb(238, 204, 112);
+            cursor: pointer;
+            border: none;
+            font-size: 16px;
+        }
+        .home>#home01>#welcome>button:hover{
+            background-color: rgb(182, 159, 101);
+        }
+        .home>#home02{
+            width: 100%;
+            height: 120px;
+            display: flex;
+            justify-content: center;
+            gap: 150px;
+        }
+        .home>#home02>div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            width: 400px;
+            cursor: pointer;
+        }
+        .home>#home02>div:hover{
+            box-shadow: 2px 2px 2px rgb(190, 163, 163);
+            border: 2px solid rgb(206, 192, 192);
+        }
+
+        /* <!-- SECTION MENU START HERE --> */
+        .menu{
+            width: 100%;
+            height: 1000px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 50px;
+        }
+        .menu>#div-01{
+            width: 100px;
+            height: 30px;
+            font-size: 18px;
+            background-color: green;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+        }
+        .menu>h2{
+           font-size: 30px;
+        }
+        .menu>#menu-container{
+            width: 1000px;
+            height: 700px;
+            /* background-color: aquamarine; */
+            display: grid;   
+            gap: 10px;
+            grid-template-areas: "Food-1 Food-1 Food-2 Food-3"
+                                  "Food-1 Food-1 Food-2 Food-4"
+                                  "Food-5 Food-6 Food-7 Food-4";
+        }
+        .menu>#menu-container>.items{
+            background-color: aliceblue;
+            border: 2px solid black;
+            transition: all .5s ease-in-out;
+        }
+        .menu>#menu-container>.items:hover{
+            width: 102%;
+            height: 102%;
+            transition: all .5s ease-in-out;
+        }
+        .menu>#menu-container>#item-1{
+            grid-area: Food-1;
+            background-image: url(../Images/grid_image1.png);
+            background-size: cover;
+        }
+        .menu>#menu-container>#item-2{
+            grid-area: Food-2;
+            background-image: url(../Images/grid_image2.png);
+            background-size: cover;
+        }
+        .menu>#menu-container>#item-3{
+            grid-area: Food-3;
+            background-image: url(../Images/grid_image3.png);
+            background-size: cover;
+        }
+        .menu>#menu-container>#item-4{
+            grid-area: Food-4;
+            background-image: url(../Images/grid_image7.png);
+            background-size: cover;
+        }
+        .menu>#menu-container>#item-5{
+            grid-area: Food-5;
+            background-image: url(../Images/grid_image4.png);
+            background-size: cover;
+        }
+        .menu>#menu-container>#item-6{
+            grid-area: Food-6;
+            background-image: url(../Images/grid_image5.png);
+            background-size: cover;
+        }
+        .menu>#menu-container>#item-7{
+            grid-area: Food-7;
+            background-image: url(../Images/grid_image6.png);
+            background-size: cover;
+        }
+        /* FOOTER */
+        footer{
+            width: 100%;
+            height: 250px;
+            background-color:#c9c9d8;
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 100px;
+        }
+        footer>.boxes{
+            width: 300px;
+            height: 200px;
+        }
+        footer>.boxes>h4{
+            font-size: 25px;
+            color: rgb(95, 99, 102);
+        }
+        footer>.boxes>ul>li{
+            list-style-type: none;
+            margin-top: 5px;
+        }
+        footer>.boxes>ul>li>a{
+            text-decoration: none;
+            color: black;
+            font-size: 17px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        footer>.boxes>div{
+            height: 40px;
+            gap: 10px;
+            display: flex;
+        }
+        footer>.boxes>div>a>img{
+            height: 35px;
+        }
+        footer>.boxes>input{
+            height: 30px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
